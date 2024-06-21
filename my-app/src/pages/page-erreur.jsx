@@ -1,7 +1,7 @@
 import React from "react";
 
-const NoPage = () => {
+const Erreur = () => {
   return <div>Page Not Found</div>;
 };
 
-export default NoPage;
+export default Erreur;

@@ -47,7 +47,7 @@ body {
   height: auto;
 }
 .banner h1 {
-  background-image: url("../images/Image source 1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Image source 1.png");
   background-size: cover; /* Pour couvrir tout le titre */
   background-position: center;
   background-repeat: no-repeat;
@@ -75,4 +75,56 @@ body {
 .footer p {
   color: #fff;
   font-size: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 33%;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 0.5rem;
+  height: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card-content {
+  border-radius: 0 0 0.5rem 0.5rem;
+  bottom: 0;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.card-title {
+  color: #fff;
+  font-size: 18px;
+  left: 10px;
+  position: absolute;
+  width: 95%;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #555;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
 }/*# sourceMappingURL=acceuil.css.map */

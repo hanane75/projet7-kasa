@@ -1,8 +1,7 @@
-// src/App.jsx
 import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/banner';
-import Galerie from '../components/Galerie';
+import Cardlist from '../components/Cardlist';
 import Footer from '../components/footer';
 
 const App = () => {
@@ -10,7 +9,7 @@ const App = () => {
     <div>
       <Header />
       <Banner />
-      <Galerie />
+      <Cardlist/>
       <Footer/>
     </div>
     
@@ -18,8 +17,3 @@ const App = () => {
 };
 
 export default App;
-
-
-
-
-

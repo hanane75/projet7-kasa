@@ -4,7 +4,8 @@ import React from 'react';
 const Footer= () => {
   return (
     <div className="footer">
-       <p> 2020 Kasa. All rights reserved</p>
+        
+       <p> 2024 Kasa. All rights reserved</p>
     </div>
   );
 };

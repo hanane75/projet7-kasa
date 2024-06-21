@@ -1,7 +1,16 @@
 import React from "react";
 
-const About = () => {
-  return <div>About Page</div>;
+import Header from "../components/Header";
+
+const Propos = () => {
+  return (
+    <div>
+      <Header />
+      
+      
+    </div>
+    
+  );
 };
 
-export default About;
+export default Propos;

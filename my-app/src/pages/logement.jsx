@@ -1,7 +1,7 @@
 import React from "react";
 
-const FichLogement = () => {
+const Logement = () => {
   return <div>Logement Page</div>;
 };
 
-export default FichLogement;
+export default Logement;
