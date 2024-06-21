@@ -5,7 +5,7 @@ const Card = ({ title, image }) => {
   return (
     <div className="card">
       <img src={image} alt={title} className="card-image" />
-      <div className="card-content">
+      <div className="card-title-overlay">
         <h3 className="card-title">{title}</h3>
       </div>
     </div>
