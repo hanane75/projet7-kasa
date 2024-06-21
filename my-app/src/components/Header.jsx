@@ -1,10 +1,11 @@
 import React from 'react';
 import '../style/acceuil.css';
+
 const Header = () => {
     return (
       <header className="header">
         <div className="logo-container">
-          <img src="../assets/images/LOGO.jpg"alt="Logo" className="logo" />
+          <img src="Logo.jpg" alt="Logo" className="logo" />
         </div>
         <nav className="nav">
           <ul className="nav-list">

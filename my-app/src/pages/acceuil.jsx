@@ -1,12 +1,19 @@
 // src/App.jsx
 import React from 'react';
-import Header from '../components/Header'; // Assurez-vous que le chemin est correct
+import Header from '../components/Header';
+import Banner from '../components/banner';
+import Galerie from '../components/Galerie';
+import Footer from '../components/footer';
 
 const App = () => {
   return (
     <div>
       <Header />
+      <Banner />
+      <Galerie />
+      <Footer/>
     </div>
+    
   );
 };
 

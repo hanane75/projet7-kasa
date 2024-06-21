@@ -1,3 +1,9 @@
+body {
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -34,5 +40,39 @@
 .nav-link {
   color: rgb(10, 10, 10);
   text-decoration: none;
+  font-size: 16px;
+}
+
+.banner {
+  height: auto;
+}
+.banner h1 {
+  background-image: url("../images/Image source 1.png");
+  background-size: cover; /* Pour couvrir tout le titre */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Couleur du texte */
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.galerie {
+  display: flex;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.footer {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: #fff;
   font-size: 16px;
 }/*# sourceMappingURL=acceuil.css.map */
