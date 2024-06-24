@@ -1,0 +1,35 @@
+.collapse-item {
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .collapse-header {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .collapse-header h2 {
+    margin: 0;
+  }
+  
+  .collapse-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .collapse-content {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+  }
+  
