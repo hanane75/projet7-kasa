@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import data from '../data/data.json';
-import { NavLink } from 'react-router-dom';
+
 import '../style/acceuil.css';
 
 const CardList = () => {
@@ -14,7 +14,7 @@ const CardList = () => {
   }, []);
 
   return (
-    <NavLink to="/propos">
+    
     <div className="card-list">
       {cardsData.map((card) => (
         <Card
@@ -24,7 +24,7 @@ const CardList = () => {
         />
       ))}
     </div>
-    </NavLink>
+   
   );
 };
 

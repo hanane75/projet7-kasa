@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/accueil" />} />
         <Route path="/accueil" element={<Acceuil />} />
         <Route path="/propos" element={<Propos />} />
-        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/logement/:id" element={<Logement/>} />
         <Route path="*" element={<Erreur />} />
       </Routes>
     </HashRouter>

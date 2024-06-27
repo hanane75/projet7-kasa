@@ -192,11 +192,15 @@ main {
 .error {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 288px;
+  font-size: 90px;
   line-height: 410.69px;
   text-align: center;
   color: red;
   margin: 0;
+}
+.error h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .error p {
   font-size: 36px;

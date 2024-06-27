@@ -1,20 +1,16 @@
 import React from 'react';
-import '../style/acceuil.css';
+import { NavLink } from 'react-router-dom';
 
-const Card = ({ title, image }) => {
+
+const Card = ({ id, title, image }) => {
   return (
-    <div className="card">
+    <NavLink to={`/logement/${id}`} className="card">
       <img src={image} alt={title} className="card-image" />
       <div className="card-title-overlay">
         <h3 className="card-title">{title}</h3>
       </div>
-    </div>
+    </NavLink>
   );
 };
 
 export default Card;
-
-
-
-
-

@@ -1,0 +1,64 @@
+.logement-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .logement-details {
+    padding: 20px;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tag {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .host-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #ddd;
+  }
+  
+  .star.filled {
+    color: #ff5a5f;
+  }
+  
+  .equipments {
+    margin-top: 20px;
+  }
+  
