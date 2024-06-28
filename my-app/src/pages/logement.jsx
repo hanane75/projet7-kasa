@@ -1,25 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/data.json';
-
+import Header from '../components/Header';
 
 const Logement = () => {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
 
   useEffect(() => {
-    console.log("ID from URL:", id);  // Log the ID to check if it's correct
+    console.log("ID from URL:", id);
+    
+   
     const foundLogement = data.find((item) => item.id === id);
-    console.log("Found Logement:", foundLogement);  // Log the found logement data
-    setLogement(foundLogement);
+    console.log("Found Logement:", foundLogement);
+    
+    if (foundLogement) {
+      setLogement(foundLogement);
+    } else {
+      console.error(`Logement with ID ${id} not found`);
+    }
   }, [id]);
 
-  if (!logement) return <div>Chargement...</div>;
+  if (!logement) {
+    return <div>Chargement...</div>;
+  }
 
   return (
     <div className="logement-container">
       <header className="logement-header">
-        {/* Ajoutez votre composant Header ici */}
+        <Header />
       </header>
       <div className="carousel">
         {logement.pictures.map((picture, index) => (
