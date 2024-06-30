@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Card = ({ id, title, image }) => {
   return (
     <NavLink to={`/logement/${id}`} className="card">
@@ -14,3 +13,4 @@ const Card = ({ id, title, image }) => {
 };
 
 export default Card;
+

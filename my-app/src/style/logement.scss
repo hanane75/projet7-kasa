@@ -10,9 +10,9 @@
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-}
-.logement-details h1 {
-  color: #FF6060;
+  h1{
+    color: #FF6060;
+  }
 }
 
 .tags {
@@ -44,6 +44,7 @@
   margin-left: 10px;
 }
 
+
 /* Rating.css */
 .rating {
   display: flex;
@@ -60,4 +61,4 @@
 
 .equipments {
   margin-top: 20px;
-}/*# sourceMappingURL=logement.css.map */
+}

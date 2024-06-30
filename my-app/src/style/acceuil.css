@@ -1,4 +1,110 @@
 @charset "UTF-8";
+.logement-container {
+  padding: 20px;
+}
+
+.carousel-container {
+  margin-bottom: 20px;
+}
+
+.logement-details {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+.logement-details h1 {
+  color: #FF6060;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.host-picture {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+/* Rating.css */
+.rating {
+  display: flex;
+}
+
+.star {
+  font-size: 20px;
+  color: lightgray;
+}
+
+.star.filled {
+  color: orange;
+}
+
+.equipments {
+  margin-top: 20px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.carousel-navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 body {
   padding: 50px;
   padding-top: 10px;
@@ -41,7 +147,7 @@ body {
 .nav-link {
   color: rgb(10, 10, 10);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 .nav-link :hover {
   text-decoration: underline;

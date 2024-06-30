@@ -2,38 +2,29 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../data/data.json';
 import Header from '../components/Header';
+import Carousel from '../components/Carousel'; 
+import CollapseItem from "../components/CollapseItem";
 
 const Logement = () => {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
 
   useEffect(() => {
-    console.log("ID from URL:", id);
-    
-   
+    console.log("ID from URL:", id);  
     const foundLogement = data.find((item) => item.id === id);
-    console.log("Found Logement:", foundLogement);
-    
-    if (foundLogement) {
-      setLogement(foundLogement);
-    } else {
-      console.error(`Logement with ID ${id} not found`);
-    }
+    console.log("Found Logement:", foundLogement); 
+    setLogement(foundLogement);
   }, [id]);
 
-  if (!logement) {
-    return <div>Chargement...</div>;
-  }
+  if (!logement) return <div>Chargement...</div>;
 
   return (
     <div className="logement-container">
       <header className="logement-header">
         <Header />
       </header>
-      <div className="carousel">
-        {logement.pictures.map((picture, index) => (
-          <img key={index} src={picture} alt={`${logement.title} - ${index + 1}`} className="carousel-image" />
-        ))}
+      <div className="carousel-container">
+        <Carousel pictures={logement.pictures} />
       </div>
       <div className="logement-details">
         <h1>{logement.title}</h1>
@@ -42,9 +33,7 @@ const Logement = () => {
           {logement.tags.map((tag, index) => (
             <span key={index} className="tag">{tag}</span>
           ))}
-        </div>
-        <div className="description">{logement.description}</div>
-        <div className="host">
+           <div className="host">
           <p>{logement.host.name}</p>
           <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
         </div>
@@ -53,10 +42,22 @@ const Logement = () => {
             <span key={index} className={index < logement.rating ? 'star filled' : 'star'}>★</span>
           ))}
         </div>
+        </div>
+        
+       
+        
+        <div className="description">
+        <CollapseItem title="description">
+        {logement.description}
+          </CollapseItem>
+        </div>
         <div className="equipments">
-          {logement.equipments.map((equipment, index) => (
+        <CollapseItem title="equipments">
+        {logement.equipments.map((equipment, index) => (
             <p key={index}>{equipment}</p>
           ))}
+          </CollapseItem>
+         
         </div>
       </div>
     </div>
