@@ -89,12 +89,11 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
+  gap: 70px;
 }
-.description .collapse-item-2 {
-  background-color: #f7f7f7;
-  padding: 10px;
-  border: 1px solid #e0e0e0;
+.description .collapse-item {
   border-radius: 5px;
+  width: 100%;
 }
 .description .collapse-item-header {
   display: flex;
@@ -103,4 +102,5 @@
 }
 .description .collapse-item-content {
   padding-top: 10px;
+  background-color: #F6F6F6;
 }/*# sourceMappingURL=logement.css.map */

@@ -90,12 +90,11 @@
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
+  gap: 70px;
 }
-.description .collapse-item-2 {
-  background-color: #f7f7f7;
-  padding: 10px;
-  border: 1px solid #e0e0e0;
+.description .collapse-item {
   border-radius: 5px;
+  width: 100%;
 }
 .description .collapse-item-header {
   display: flex;
@@ -104,6 +103,7 @@
 }
 .description .collapse-item-content {
   padding-top: 10px;
+  background-color: #F6F6F6;
 }
 
 /* Carousel.css */
@@ -331,11 +331,8 @@ main {
 
 .collapse-item {
   margin: 10px 0;
-  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .collapse-header {
@@ -362,7 +359,7 @@ main {
 
 .collapse-content {
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #F6F6F6;
   color: #333;
 }
 
