@@ -169,6 +169,12 @@ body {
   padding: 10px 20px;
   color: #fff;
 }
+@media all and (max-width: 700px) {
+  .header {
+    font-size: 12px;
+    padding: 0;
+  }
+}
 
 .logo-container {
   display: flex;
@@ -202,6 +208,11 @@ body {
 }
 .nav-link :hover {
   text-decoration: underline;
+}
+@media all and (max-width: 700px) {
+  .nav-link {
+    font-size: 15px;
+  }
 }
 
 .banner {
@@ -240,9 +251,15 @@ body {
   margin-right: auto;
   margin-bottom: 20px;
 }
+@media all and (max-width: 700px) {
+  .bannier {
+    height: 111px;
+    width: 100%;
+  }
+}
 
 main {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .galerie {
@@ -364,23 +381,33 @@ main {
 }
 
 .error {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 90px;
   line-height: 410.69px;
   text-align: center;
   color: red;
   margin: 0;
 }
 .error h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 288px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+@media all and (max-width: 700px) {
+  .error h1 {
+    font-size: 90px;
+  }
 }
 .error p {
   font-size: 36px;
   font-weight: 500;
   line-height: 51.34px;
   text-align: center;
+}
+@media all and (max-width: 700px) {
+  .error p {
+    font-size: 18px;
+  }
 }
 .error .link {
   font-size: 18px;
