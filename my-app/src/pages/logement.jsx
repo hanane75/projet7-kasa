@@ -49,12 +49,12 @@ const Logement = () => {
         </div>
         <div className='description'>
         <div>
-          <CollapseItem className="collapse-item-2" title="Description">
+          <CollapseItem  title="Description">
             {logement.description}
           </CollapseItem>
         </div>
         <div>
-          <CollapseItem   className="collapse-item-2" title="Équipements">
+          <CollapseItem    title="Équipements">
             {logement.equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
