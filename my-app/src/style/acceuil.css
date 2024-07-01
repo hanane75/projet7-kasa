@@ -1,82 +1,123 @@
 @charset "UTF-8";
 .logement-container {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .carousel-container {
-  margin-bottom: 20px;
+  width: 100%;
+  margin: 20px 0;
 }
 
 .logement-details {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  width: 100%;
+  padding: 20px 0;
 }
-.logement-details h1 {
-  color: #FF6060;
+
+.logement-title {
+  margin-bottom: 20px;
+}
+.logement-title h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #ff6060;
+}
+.logement-title p {
+  font-size: 1.2em;
+  color: gray;
+}
+
+.logement-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .tags {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .tag {
-  background-color: #ff5a5f;
+  background-color: #ff6060;
   color: white;
+  border-radius: 10px;
   padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.description {
-  margin-top: 20px;
+  margin: 5px;
 }
 
 .host {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+}
+.host p {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ff6060;
+}
+
+.hostdettail {
+  position: absolute;
+  right: 20px;
+  top: -100px;
 }
 
 .host-picture {
-  border-radius: 50%;
   width: 50px;
   height: 50px;
-  margin-left: 10px;
+  border-radius: 50%;
 }
 
-/* Rating.css */
 .rating {
   display: flex;
 }
 
 .star {
-  font-size: 20px;
+  font-size: 1.5em;
   color: lightgray;
 }
 
 .star.filled {
-  color: orange;
+  color: #ff6060;
 }
 
-.equipments {
-  margin-top: 20px;
+.description {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.description .collapse-item-2 {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.description .collapse-item-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.description .collapse-item-content {
+  padding-top: 10px;
 }
 
+/* Carousel.css */
 .carousel {
   position: relative;
-  max-width: 100%;
-  margin: auto;
-}
-
-.carousel-inner {
-  position: relative;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .carousel-image {
   width: 100%;
-  height: 400px;
-  display: block;
+  height: 415px;
+  border-radius: 25px;
 }
 
 .carousel-navigation {
@@ -88,21 +129,31 @@
   transform: translateY(-50%);
 }
 
+.left-arrow {
+  margin-left: 10px;
+}
+
+.right-arrow {
+  margin-right: 10px;
+}
+
 .carousel-arrow {
-  background: none;
-  border: none;
-  font-size: 2rem;
   cursor: pointer;
+  width: 50px;
+  height: auto;
+  opacity: 0.7;
+}
+
+.carousel-arrow:hover {
+  opacity: 1;
 }
 
 .carousel-counter {
+  text-align: center;
+  margin-top: 10px;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
+  right: 50%;
+  top: 90%;
 }
 
 body {
@@ -171,6 +222,7 @@ body {
   text-align: center;
   margin: 0; /* Supprime les marges par défaut */
   padding: 20px; /* Ajoute un peu de padding autour du texte */
+  font-size: 48px;
 }
 
 .bannier {

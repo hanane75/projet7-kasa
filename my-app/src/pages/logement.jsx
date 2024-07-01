@@ -4,62 +4,66 @@ import data from '../data/data.json';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel'; 
 import CollapseItem from "../components/CollapseItem";
-
+import Footer from '../components/footer';
 const Logement = () => {
   const { id } = useParams();
   const [logement, setLogement] = useState(null);
 
   useEffect(() => {
-    console.log("ID from URL:", id);  
     const foundLogement = data.find((item) => item.id === id);
-    console.log("Found Logement:", foundLogement); 
     setLogement(foundLogement);
   }, [id]);
 
   if (!logement) return <div>Chargement...</div>;
 
   return (
+    <div>
+      <Header />
+
     <div className="logement-container">
-      <header className="logement-header">
-        <Header />
-      </header>
       <div className="carousel-container">
         <Carousel pictures={logement.pictures} />
       </div>
       <div className="logement-details">
-        <h1>{logement.title}</h1>
-        <p>{logement.location}</p>
-        <div className="tags">
-          {logement.tags.map((tag, index) => (
-            <span key={index} className="tag">{tag}</span>
-          ))}
-           <div className="host">
-          <p>{logement.host.name}</p>
-          <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
+        <div className="logement-title">
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
         </div>
-        <div className="rating">
-          {Array.from({ length: 5 }, (_, index) => (
-            <span key={index} className={index < logement.rating ? 'star filled' : 'star'}>★</span>
-          ))}
+        <div className="logement-info">
+          <div className="tags">
+            {logement.tags.map((tag, index) => (
+              <span key={index} className="tag">{tag}</span>
+            ))}
+          </div>
+          <div className='hostdettail'>
+          <div className="host">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
+          </div>
+          <div className="rating">
+            {Array.from({ length: 5 }, (_, index) => (
+              <span key={index} className={index < logement.rating ? 'star filled' : 'star'}>★</span>
+            ))}
+          </div>
+          </div>
         </div>
-        </div>
-        
-       
-        
-        <div className="description">
-        <CollapseItem title="description">
-        {logement.description}
+        <div className='description'>
+        <div>
+          <CollapseItem className="collapse-item-2" title="Description">
+            {logement.description}
           </CollapseItem>
         </div>
-        <div className="equipments">
-        <CollapseItem title="equipments">
-        {logement.equipments.map((equipment, index) => (
-            <p key={index}>{equipment}</p>
-          ))}
+        <div>
+          <CollapseItem   className="collapse-item-2" title="Équipements">
+            {logement.equipments.map((equipment, index) => (
+              <p key={index}>{equipment}</p>
+            ))}
           </CollapseItem>
-         
+        </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
