@@ -89,7 +89,7 @@
 .description {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .description .collapse-item-2 {
   background-color: #f7f7f7;
@@ -224,6 +224,11 @@ body {
   padding: 20px; /* Ajoute un peu de padding autour du texte */
   font-size: 48px;
 }
+@media all and (max-width: 700px) {
+  .banner h1 {
+    font-size: 24px;
+  }
+}
 
 .bannier {
   width: 100%;
@@ -261,6 +266,11 @@ main {
   color: #fff;
   font-size: 16px;
 }
+@media all and (max-width: 700px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
 
 .card {
   position: relative;
@@ -271,6 +281,11 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 25%;
   transition: transform 0.2s;
+}
+@media all and (max-width: 700px) {
+  .card {
+    width: 95%;
+  }
 }
 
 .card:hover {
@@ -290,8 +305,7 @@ main {
   bottom: 0;
   width: 100%;
   color: #fff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 10px;
   border-radius: 0 0 8px 8px;
   box-sizing: border-box;
 }
@@ -308,6 +322,11 @@ main {
   padding: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
+}
+@media all and (max-width: 700px) {
+  .card-list {
+    flex-direction: column;
+  }
 }
 
 .collapse-item {

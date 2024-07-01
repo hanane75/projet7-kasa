@@ -88,7 +88,7 @@
 .description {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .description .collapse-item-2 {
   background-color: #f7f7f7;

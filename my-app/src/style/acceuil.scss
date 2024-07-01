@@ -68,6 +68,10 @@ body{
       margin: 0; /* Supprime les marges par défaut */
       padding: 20px; /* Ajoute un peu de padding autour du texte */
       font-size: 48px;
+      @media all and (max-width: 700px)
+      {
+         font-size: 24px;
+      }
     }
   }
   .bannier {
@@ -105,6 +109,12 @@ body{
     p{
       color:#fff;
       font-size: 16px;
+
+      @media all and (max-width: 700px)
+      {
+        font-size: 12px;
+      }
+    
     }
   }
   
@@ -117,6 +127,13 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 25%;
     transition: transform 0.2s;
+
+    @media all and (max-width: 700px)
+      {
+        width: 95%;
+
+      }
+    
   }
   
   .card:hover {
@@ -134,10 +151,8 @@ body{
     position: absolute;
     bottom: 0;
     width: 100%;
-    
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
   }
@@ -154,6 +169,11 @@ body{
     padding: 20px;
     background-color: #F6F6F6;
     border-radius: 20px;
+    @media all and (max-width: 700px)
+      {
+        flex-direction: column;
+
+      }
   }
   .collapse-item {
     margin: 10px 0;

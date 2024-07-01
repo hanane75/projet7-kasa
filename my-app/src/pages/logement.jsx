@@ -48,18 +48,18 @@ const Logement = () => {
           </div>
         </div>
         <div className='description'>
-        <div>
+        
           <CollapseItem  title="Description">
             {logement.description}
           </CollapseItem>
-        </div>
-        <div>
+        
+        
           <CollapseItem    title="Équipements">
             {logement.equipments.map((equipment, index) => (
               <p key={index}>{equipment}</p>
             ))}
           </CollapseItem>
-        </div>
+      
         </div>
       </div>
     </div>
