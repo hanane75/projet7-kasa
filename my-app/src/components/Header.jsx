@@ -1,14 +1,18 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import  {Link, NavLink } from 'react-router-dom';
 import '../style/acceuil.css';
 
 const Header = () => {
   return (
+
     <header className="header">
+      <NavLink to="/accueil" >
       <div className="logo-container">
         <img src="Logo.jpg" alt="Logo" className="logo" />
       </div>
+      </NavLink>
+      
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item">

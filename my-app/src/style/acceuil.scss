@@ -5,6 +5,9 @@ body{
   padding : 50px;
   padding-top : 10px;
   padding-bottom : 0;
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 .header {
     display: flex;
@@ -12,10 +15,10 @@ body{
     align-items: center;
     padding: 10px 20px;
     color: #fff;
-    @media all and (max-width: 700px)
+    @media all and (max-width: 768px)
     {
        font-size: 12px;
-       padding: 0;
+       padding: 10px;
     }
 
     
@@ -50,14 +53,14 @@ body{
     color:rgb(10, 10, 10);
     text-decoration: none;
     font-size: 20px;
-    :hover {
-      text-decoration: underline;
-  }
-  @media all and (max-width: 700px)
+  @media all and (max-width: 768px)
   {
     font-size: 15px;
   }
 
+}
+.nav-link:active {
+  text-decoration: underline; /* Soulignement au survol */
 }
 
   .banner {
@@ -80,7 +83,7 @@ body{
       margin: 0; /* Supprime les marges par défaut */
       padding: 20px; /* Ajoute un peu de padding autour du texte */
       font-size: 48px;
-      @media all and (max-width: 700px)
+      @media all and (max-width: 768px)
       {
          font-size: 24px;
       }
@@ -95,7 +98,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  @media all and (max-width: 700px)
+  @media all and (max-width: 768px)
   {
     height: 111px;
     width: 100%;
@@ -126,9 +129,10 @@ body{
       color:#fff;
       font-size: 16px;
 
-      @media all and (max-width: 700px)
+      @media all and (max-width: 768px)
       {
         font-size: 12px;
+
       }
     
     }
@@ -144,7 +148,7 @@ body{
     width: 25%;
     transition: transform 0.2s;
 
-    @media all and (max-width: 700px)
+    @media all and (max-width: 768px)
       {
         width: 95%;
 
@@ -185,9 +189,20 @@ body{
     padding: 20px;
     background-color: #F6F6F6;
     border-radius: 20px;
-    @media all and (max-width: 700px)
+    @media all and (max-width: 768px)
       {
         flex-direction: column;
+        padding: 0;
+
+      }
+  }
+
+
+  .valeurs{
+    padding:0 50px;
+    @media all and (max-width: 768px)
+      {
+        padding: 0;
 
       }
   }
@@ -210,6 +225,8 @@ body{
   
   .collapse-header h2 {
     margin: 0;
+    font-weight: 700;
+    font-size: 18px;
   }
   
   .collapse-toggle {
@@ -238,7 +255,7 @@ body{
       font-size: 288px;
       margin-top: 0px;
       margin-bottom: 0px;
-      @media all and (max-width: 700px)
+      @media all and (max-width: 768px)
       {
         font-size: 90px;
 
@@ -251,7 +268,7 @@ font-size: 36px;
 font-weight: 500;
 line-height: 51.34px;
 text-align: center;
-@media all and (max-width: 700px)
+@media all and (max-width: 768px)
 {
   font-size: 18px;
 

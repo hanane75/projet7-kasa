@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/accueil" element={<Acceuil />} />
         <Route path="/propos" element={<Propos />} />
         <Route path="/logement/:id" element={<Logement/>} />
+        <Route path="/page-erreur" element={<Erreur />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
     </HashRouter>

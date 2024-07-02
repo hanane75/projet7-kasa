@@ -4,19 +4,36 @@
   margin-left: 20px;
   margin-right: 20px;
   font-family: Arial, sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .logement-container {
+    margin: 10px;
+  }
 }
 
 .carousel-container {
   width: 100%;
   margin: 20px 0;
 }
+@media (max-width: 768px) {
+  .carousel-container {
+    margin: 10px 0;
+  }
+}
 
 .logement-details {
   width: 100%;
   padding: 20px 0;
 }
+@media (max-width: 768px) {
+  .logement-details {
+    padding: 10px 0;
+  }
+}
 
 .logement-title {
+  font-weight: 400;
   margin-bottom: 20px;
 }
 .logement-title h1 {
@@ -24,9 +41,19 @@
   margin: 0;
   color: #ff6060;
 }
+@media (max-width: 768px) {
+  .logement-title h1 {
+    font-size: 1.5em;
+  }
+}
 .logement-title p {
   font-size: 1.2em;
-  color: gray;
+  color: black;
+}
+@media (max-width: 768px) {
+  .logement-title p {
+    font-size: 1em;
+  }
 }
 
 .logement-info {
@@ -36,10 +63,21 @@
   margin-bottom: 20px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .logement-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .tags {
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .tags {
+    margin-bottom: 10px;
+  }
 }
 
 .tag {
@@ -54,9 +92,16 @@
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .host {
+    justify-content: flex-end;
+  }
+}
 .host p {
+  display: flex;
+  flex-direction: column;
   margin-right: 10px;
-  font-weight: bold;
+  font-weight: medium;
   color: #ff6060;
 }
 
@@ -64,6 +109,18 @@
   position: absolute;
   right: 20px;
   top: -100px;
+}
+@media (max-width: 768px) {
+  .hostdettail {
+    position: static;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row-reverse;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .host-picture {
@@ -74,6 +131,7 @@
 
 .rating {
   display: flex;
+  justify-content: flex-end;
 }
 
 .star {
@@ -90,6 +148,12 @@
   display: flex;
   justify-content: space-around;
   gap: 70px;
+}
+@media (max-width: 768px) {
+  .description {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .description .collapse-item {
   border-radius: 5px;
