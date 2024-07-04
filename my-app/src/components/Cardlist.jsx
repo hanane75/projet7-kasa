@@ -5,14 +5,12 @@ import '../style/acceuil.css';
 
 const CardList = () => {
   const [cardsData, setCardsData] = useState([]);
-
   useEffect(() => {
     // Charger les données JSON
     setCardsData(data);
   }, []);
 
-  return (
-    
+  return ( 
     <div className="card-list">
       {cardsData.map((card) => (
        <Card 
@@ -25,5 +23,4 @@ const CardList = () => {
    
   );
 };
-
 export default CardList;

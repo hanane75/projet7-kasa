@@ -88,10 +88,11 @@
   
   p {
     display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-  font-weight: medium;
-  color: #ff6060;
+    flex-direction: column;
+    margin-right: 10px;
+    color: #ff6060;
+    text-align: right; /* Alignement du texte à droite */
+    word-break: break-word; /* Permet le retour à la ligne automatique */
   }
 }
 

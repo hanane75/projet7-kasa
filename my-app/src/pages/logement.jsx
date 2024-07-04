@@ -24,7 +24,7 @@ const Logement = () => {
   if (!logement) {
     return <Navigate to="/page-erreur" replace />;
   }
-
+  const hostNameParts = logement.host.name.split(' ');
   return (
     <div>
       <Header />
@@ -45,7 +45,11 @@ const Logement = () => {
             </div>
             <div className='hostdettail'>
               <div className="host">
-                <p>{logement.host.name}</p>
+              <p className="host-name">
+                  {hostNameParts.map((part, index) => (
+                    <span key={index}>{part}</span>
+                  ))}
+                </p>
                 <img src={logement.host.picture} alt={logement.host.name} className="host-picture" />
               </div>
               <div className="rating">

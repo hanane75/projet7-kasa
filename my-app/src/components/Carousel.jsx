@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-
-
 const Carousel = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -9,13 +7,11 @@ const Carousel = ({ pictures }) => {
     const newIndex = isFirstSlide ? pictures.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
-
   const goToNext = () => {
     const isLastSlide = currentIndex === pictures.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
-
   return (
     <div className="carousel">
       <div className="carousel-inner">
